@@ -4896,7 +4896,7 @@ h1 {
 #footer {
     background-color: #0d1e30;
     padding-top: 90px;
-    padding-bottom: 312px;
+    padding-bottom: 70px;
     text-align: center;
 }
 
@@ -8055,11 +8055,11 @@ h1 {
 
 #more-info {
     padding-top: 100px;
-    padding-bottom: 345px;
+    padding-bottom: 267px;
     position: relative;
     z-index: 100;
     margin-top: -97px;
-    margin-bottom: -24px;
+    margin-bottom: -34px;
 }
 
 #more-info .bg-custom {
@@ -8069,7 +8069,6 @@ h1 {
     width: 100%;
     height: 100%;
     z-index: 0;
-    padding-bottom: 0px;
 }
 
 #more-info .bg-custom .obj-gradiant1 {
@@ -9080,7 +9079,6 @@ a.btn-custom.bg-color-3 {
 .container {
     width: 100%;
     max-width: 1230px;
-    height: 0px;
 }
 
 .container-full {
@@ -9192,23 +9190,4 @@ Logo_head {
 }
 
 .icons_casos {
-}
-
-@media (min-width:1200px) {
-    .servicios {
-    }
-}
-
-@media (max-width:1199px) {
-    .servicios_mD {
-        padding-bottom: 16px;
-        position: relative;
-        display: flex;
-        height: 1711px;
-        margin: -64px 17px 0px -3px;
-        padding-right: 0px;
-        width: 1408px;
-        object-fit: contain;
-        float: left;
-    }
 }
