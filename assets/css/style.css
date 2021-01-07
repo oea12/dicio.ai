@@ -4191,8 +4191,6 @@ h1 {
 
 #more-info .links-holder ul li .info-link:after {
     position: absolute;
-    content: "\f054";
-    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 600;
     top: 50%;
@@ -6151,8 +6149,6 @@ h1 {
 
 #more-info .links-holder ul li .info-link:after {
     position: absolute;
-    content: "\f054";
-    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 600;
     top: 50%;
@@ -8136,8 +8132,6 @@ h1 {
 
 #more-info .links-holder ul li .info-link:after {
     position: absolute;
-    content: "\f054";
-    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 600;
     top: 50%;
@@ -9292,4 +9286,25 @@ Logo_head {
     visibility: visible;
     margin-top: 0px;
     margin-bottom: 13px;
+}
+
+.Inr_new {
+    font-family: 'Linearicons-Free';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 106px;
+    margin-top: -19px;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: relative;
+    right: -24px;
+    top: -2px;
 }
