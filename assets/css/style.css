@@ -1551,16 +1551,6 @@ section {
 /* ------------------------------------*\
     #Heading
 \*------------------------------------ */
-.heading .heading--title {
-    font-family: 'Mulish', sans-serif;
-    color: #222222;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-}
-
 .heading .heading--desc {
     font-size: 20px;
     font-weight: 400;
@@ -5057,6 +5047,7 @@ h1 {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
 }
 
 #footer .social-menu li {
@@ -5077,6 +5068,7 @@ h1 {
     min-width: 30px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    margin-right: 16px;
 }
 
 #footer .social-menu li a:hover [class*="fa"],
@@ -8062,6 +8054,15 @@ h1 {
     margin-bottom: -24px;
 }
 
+#more-info {
+    padding-top: 100px;
+    padding-bottom: 345px;
+    position: relative;
+    z-index: 100;
+    margin-top: -97px;
+    margin-bottom: -24px;
+}
+
 #more-info .bg-custom {
     position: absolute;
     left: 0;
@@ -8205,13 +8206,51 @@ h1 {
     margin-bottom: 30px;
 }
 
+@media (max-width:1199px) {
+    .info-details-holder .info-details p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #ffffff;
+        opacity: 0.7;
+        margin-top: 20px;
+        resize: inherit;
+        position: static;
+        display: flex;
+        visibility: inherit;
+        object-fit: contain;
+        max-width: 846px;
+        box-sizing: content-box;
+        font-family: 'Mulish', sans-serif;
+        text-align: center;
+        word-break: normal;
+        white-space: normal;
+        writing-mode: horizontal-tb;
+        background-size: cover;
+        margin-right: 99px;
+    }
+}
+
 .info-details-holder .info-details p {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 700;
     line-height: 26px;
     color: #ffffff;
     opacity: 0.7;
     margin-top: 20px;
+    resize: inherit;
+    position: static;
+    display: flex;
+    visibility: inherit;
+    object-fit: contain;
+    max-width: 846px;
+    box-sizing: content-box;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    word-break: normal;
+    white-space: normal;
+    writing-mode: horizontal-tb;
+    background-size: cover;
 }
 
 .info-details-holder .info-details .photo {
@@ -8936,6 +8975,9 @@ a.btn-custom.bg-color-3 {
     top: 15px;
     opacity: 0;
     transition: 0.4s;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
 }
 
 .team-overlay p {
@@ -9156,7 +9198,7 @@ Logo_head {
 @media (min-width:1200px) {
     .video_ipad {
         margin-left: -126px;
-        margin-top: 84px;
+        margin-top: -40px;
         margin-bottom: -158px;
         padding: 33px;
     }
@@ -9177,7 +9219,7 @@ Logo_head {
 @media (min-width:1200px) {
     .video_ipad_2 {
         margin-right: -160px;
-        margin-top: -457px;
+        margin-top: -462px;
         padding: 30px;
     }
 }
@@ -9211,4 +9253,33 @@ Logo_head {
         object-fit: contain;
         float: left;
     }
+}
+
+.INDUSTRIAS {
+    margin: -10px -120px 0px -98px;
+    padding-bottom: 171px;
+    top: 48px;
+    bottom: 43px;
+    position: relative;
+}
+
+.contact_form {
+    background-image: -o-linear-gradient(120deg, #0a5dd3, #24a7ff);
+    background-image: linear-gradient(120deg, #0a5dd3, #24a7ff);
+}
+
+.newhead {
+    color: #ffffff;
+}
+
+.new_head {
+    font-family: 'Mulish', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: -189px;
+    margin-right: -209px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 35px;
+    line-height: 55px;
 }

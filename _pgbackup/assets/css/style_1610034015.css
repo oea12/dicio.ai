@@ -67,28 +67,6 @@ body {
     background-color: #f8f8f8;
 }
 
-* {
-    outline: none;
-    padding-top: 0px;
-    top: 0;
-    margin: 0px;
-    min-height: 0px;
-    padding-left: 0;
-    color: #ffffff;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 700;
-}
-
-::-moz-selection {
-    text-shadow: none;
-}
-
-::selection {
-    background-color: #3498db;
-    color: #b3cbff;
-    text-shadow: none;
-}
-
 a {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -206,7 +184,7 @@ h6 {
 
 p {
     color: #999999;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 22px;
 }
@@ -385,6 +363,7 @@ pre,
 table,
 ul {
     margin-bottom: 30px;
+    margin-left: 0px;
 }
 
 section {
@@ -1041,7 +1020,7 @@ section {
 }
 
 .bg-dark {
-    background-color: #363636 !important;
+    background-color: #ffffff !important;
 }
 
 /* Background Image */
@@ -1583,11 +1562,11 @@ section {
 }
 
 .heading .heading--desc {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 0;
-    padding: 0px;
+    padding: 18px;
     font-family: 'Mulish', sans-serif;
 }
 
@@ -2236,7 +2215,7 @@ section {
     color: #ffffff;
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 32px;
     margin-bottom: 29px;
 }
@@ -2403,8 +2382,12 @@ section {
 /* ------------------------------------*\
     #Features
 \*------------------------------------ */
-.feature-panel {
-    position: relative;
+@media (max-width:1199px) {
+    .feature-panel {
+        position: relative;
+        left: 0px;
+        display: inline;
+    }
 }
 
 .feature-panel .feature--icon {
@@ -2441,7 +2424,7 @@ section {
 }
 
 .feature-panel .feature--content p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 0;
@@ -2522,7 +2505,7 @@ section {
         margin-bottom: 10px;
     }
 
-    .feature img {
+    .feature_img {
         max-width: 100%;
         height: auto;
     }
@@ -2742,18 +2725,44 @@ section {
 /* ------------------------------------*\
 	#Video
 \*------------------------------------ */
-.video-ipad-holder {
-    width: 646px;
-    height: 456px;
-    margin: 0 auto;
-    background: url("../images/mockup/iPad.png") no-repeat center;
-    padding: 30px 59px;
+@media (max-width:479px) {
+    .video-ipad-holder_chic {
+        background: url("../images/mockup/iPad.png") no-repeat center;
+        margin-left: 0px;
+        margin-top: 23px;
+    }
 }
 
-.video-ipad-holder iframe {
+@media (min-width:1200px) {
+    .video-ipad-holder {
+        width: 646px;
+        height: 456px;
+        margin: 0 auto;
+        background: url("../images/mockup/iPad.png") no-repeat center;
+        padding: 30px 59px;
+    }
+}
+
+.video-ipad-holder iframe_chic {
     width: 100%;
     height: 100%;
     border-radius: 16px;
+}
+
+@media (max-width:479px) {
+    .video-ipad-holder iframe {
+        width: 98%;
+        height: 75%;
+        border-radius: 10;
+    }
+}
+
+@media (min-width:1200px) {
+    .video-ipad-holder iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -4887,7 +4896,7 @@ h1 {
 #footer {
     background-color: #0d1e30;
     padding-top: 90px;
-    padding-bottom: 70px;
+    padding-bottom: 312px;
     text-align: center;
 }
 
@@ -7791,11 +7800,6 @@ h1 {
 
 .bg-custom {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
     background-repeat: repeat-x;
     background-image: -webkit-linear-gradient(120deg, #0a5dd3, #24a7ff);
     background-image: -o-linear-gradient(120deg, #0a5dd3, #24a7ff);
@@ -8050,10 +8054,12 @@ h1 {
 }
 
 #more-info {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 345px;
     position: relative;
     z-index: 100;
+    margin-top: -97px;
+    margin-bottom: -24px;
 }
 
 #more-info .bg-custom {
@@ -8063,6 +8069,7 @@ h1 {
     width: 100%;
     height: 100%;
     z-index: 0;
+    padding-bottom: 0px;
 }
 
 #more-info .bg-custom .obj-gradiant1 {
@@ -8094,7 +8101,7 @@ h1 {
 
 #more-info .links-holder {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 126px;
 }
 
 #more-info .links-holder ul {
@@ -8204,6 +8211,7 @@ h1 {
     line-height: 26px;
     color: #ffffff;
     opacity: 0.7;
+    margin-top: 20px;
 }
 
 .info-details-holder .info-details .photo {
@@ -8873,7 +8881,7 @@ a.btn-custom.bg-color-3 {
 }
 
 .content-head p {
-    font-size: 15px;
+    font-size: 16;
     line-height: 1.6em;
     margin: 0;
 }
@@ -9072,6 +9080,7 @@ a.btn-custom.bg-color-3 {
 .container {
     width: 100%;
     max-width: 1230px;
+    height: 0px;
 }
 
 .container-full {
@@ -9090,4 +9099,116 @@ a.btn-custom.bg-color-3 {
 
 .slider_x li {
     list-style: none;
+}
+
+@media (min-width:1200px) {
+    .IMG_logo {
+        width: 456px;
+    }
+
+    .img_logo2 {
+        width: 307px;
+    }
+}
+
+@media (max-width:1199px) {
+}
+
+Logo_head {
+    position: relative;
+}
+
+@media (min-width:1200px) {
+    .img_phone {
+        margin-right: -159px;
+        margin-top: 72px;
+        margin-left: -168px;
+    }
+}
+
+.subtext {
+    font-family: 'Mulish', sans-serif;
+    color: #999999;
+    font-size: 16;
+    margin-right: 20px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+@media (max-width:479px) {
+    .video_ipad_chic {
+        margin-left: -126px;
+        margin-top: 84px;
+        margin-bottom: -158px;
+        padding: 33px;
+    }
+
+    .video_ipad_chic {
+        margin-left: 0px;
+        margin-top: 199px;
+        margin-bottom: -195px;
+        padding: 31px;
+        top: 47px;
+        position: relative;
+    }
+}
+
+@media (min-width:1200px) {
+    .video_ipad {
+        margin-left: -126px;
+        margin-top: 84px;
+        margin-bottom: -158px;
+        padding: 33px;
+    }
+}
+
+@media (max-width:479px) {
+    .video_ipad_2_chic {
+        padding: 18px;
+        position: relative;
+        top: -290px;
+        width: 311px;
+        height: 219px;
+        margin-left: 10px;
+        margin-bottom: -5px;
+    }
+}
+
+@media (min-width:1200px) {
+    .video_ipad_2 {
+        margin-right: -160px;
+        margin-top: -457px;
+        padding: 30px;
+    }
+}
+
+.new_logito {
+    top: -22px;
+    position: relative;
+}
+
+.icons_casos {
+    padding-bottom: 15px;
+}
+
+.icons_casos {
+}
+
+@media (min-width:1200px) {
+    .servicios {
+    }
+}
+
+@media (max-width:1199px) {
+    .servicios_mD {
+        padding-bottom: 16px;
+        position: relative;
+        display: flex;
+        height: 1711px;
+        margin: -64px 17px 0px -3px;
+        padding-right: 0px;
+        width: 1408px;
+        object-fit: contain;
+        float: left;
+    }
 }
