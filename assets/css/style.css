@@ -9282,4 +9282,13 @@ Logo_head {
     letter-spacing: 1px;
     font-size: 35px;
     line-height: 55px;
+    margin-top: 43px;
+}
+
+.row_safari {
+    display: inline;
+    float: left;
+    visibility: visible;
+    margin-top: 0px;
+    margin-bottom: 13px;
 }
